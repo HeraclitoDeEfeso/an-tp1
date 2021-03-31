@@ -4,16 +4,16 @@
 
 _TODO_
 
-- [ ] Agregar enunciado original
+- [ ] Agregar enunciado original.
 - [ ] Agregar notebook vacia.
 - [ ] Agregar modelo de exportacion en latex.
 - [ ] Agregar script de exportación.
+- [ ] Pasar fórmulas a latex.
 - [ ] Pasar enunciados a notebook.
 
 Resolver
 
-- [ ] 5. c- Si quiero calcular �∞
-n=1 xn con un error menor a ϵ, dejo de sumar cuando |xn| < ϵ ?. Ver con
+- [ ] 5. c- Si quiero calcular ![eq](http://latex.codecogs.com/png.latex?\inline\sum_{n=1}^{\infty}%20x_n) con un error menor a ϵ, dejo de sumar cuando |xn| < ϵ ?. Ver con
 �∞
 n=1(0.99)n y distintos valores de ϵ. Recordar que �∞
 n=1 rn =
