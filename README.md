@@ -23,7 +23,7 @@ _TODO_
 
 Resolver
 
-- [ ] 5. c- Si quiero calcular ![eq](http://latex.codecogs.com/png.latex?\inline\sum_{n=1}^{\infty}%20x_n) con un error menor a ϵ, dejo de sumar cuando |xn| < ϵ ?. Ver con
+- [ ] 5. c- Si quiero calcular ![eq](http://latex.codecogs.com/png.latex?\inline\sum_{n=1}^{\infty}%20x_n) con un error menor a ϵ, dejo de sumar cuando ![eq](http://latex.codecogs.com/png.latex?\inline\left|x_n\right|<\epsilon)?. Ver con
 �∞
 n=1(0.99)n y distintos valores de ϵ. Recordar que �∞
 n=1 rn =
