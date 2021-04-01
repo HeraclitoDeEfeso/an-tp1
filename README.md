@@ -2,12 +2,22 @@
 ## Análisis Numérico
 ### Trabajo Práctico N°1
 
+
+| Carpeta/Archivo | Descripción 
+|-                |-
+| logo.png 	  | Logo de UNTREF
+| make-nb.bat	  | Script de exportación pdf (WIN) 
+| make-nb.sh 	  | Script de exportación pdf (GNU) 
+| myarticle	  | Template Latex para exportar Jupyter Notebook
+| Practica1.pdf   | Enunciado original
+| Readme.md       | Este archivo
+
 _TODO_
 
-- [ ] Agregar enunciado original.
+- [X] Agregar enunciado original.
 - [ ] Agregar notebook vacia.
-- [ ] Agregar modelo de exportacion en latex.
-- [ ] Agregar script de exportación.
+- [X] Agregar modelo de exportacion en latex.
+- [X] Agregar script de exportación.
 - [ ] Pasar fórmulas a latex.
 - [ ] Pasar enunciados a notebook.
 
