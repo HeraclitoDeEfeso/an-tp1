@@ -9,7 +9,6 @@
 | make-nb.bat	  | Script de exportación pdf (WIN) 
 | make-nb.sh 	  | Script de exportación pdf (GNU) 
 | myarticle	      | Template Latex para exportar Jupyter Notebook
-| Practica1.pdf   | Enunciado original
 | practica1.ipynb | Jupyter Notebook con resoluciones
 | Readme.md       | Este archivo
 
@@ -20,7 +19,7 @@ _TODO_
 - [X] Agregar modelo de exportacion en latex.
 - [X] Agregar script de exportación.
 - [X] Pasar fórmulas a latex.
-- [ ] Pasar enunciados a notebook.
+- [X] Pasar enunciados a notebook.
 - [ ] Ej.5: referencia demostración fórmula serie. 
 - [ ] Ej.5: demostración diferencia de órden. 
 
