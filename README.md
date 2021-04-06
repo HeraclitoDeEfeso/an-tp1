@@ -42,7 +42,7 @@ Resolver
         |r| < 1
     ](http://latex.codecogs.com/png.latex?\inline\left|r\right|<1)
 
-- [ ] 6. Escribir un programa para calcular
+- [X] 6. Escribir un programa para calcular
 
     <span style="display:block;text-align:center">![
         f(x) = √(x^2 + 1) - 1
