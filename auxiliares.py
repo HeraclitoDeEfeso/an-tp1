@@ -9,16 +9,19 @@
     auxiliares para la generación de tablas en una Jupyter Notebook.
 
 """
+from itertools import takewhile, count
 from IPython.display import display, Markdown
-def tabla (filas, encabezados, funciones=None):
+
+
+def tabla(filas, encabezados, funciones=None):
     """
     Genera una tabla en Markdown y ordena su visualización
 
     Se espera que los valores de *filas* respondan a la función
     :func:`str` y la cantidad de columnas coincida con la cantidad
     de elementos en *encabezados*. Las *funciones* deben recibir
-    un solo argumento. Se creará un salida del tipo 
-    :class:`IPython.core.display.Markdown` 
+    un solo argumento. Se creará un salida del tipo
+    :class:`IPython.core.display.Markdown`
 
     :param filas: valores por filas y luego por columnas
     :type filas: list[list]
@@ -29,7 +32,13 @@ def tabla (filas, encabezados, funciones=None):
     """
     if funciones:
         filas = [[fun(valor) for fun in funciones] for valor in filas]
-    display(Markdown(
-        "|" + "|".join(encabezados) + "|\n" +\
-        "".join(["|:-:" for _ in encabezados]) + "\n" +\
-        "".join(["|" + "|".join(map(str,f)) + "|\n" for f in filas])))
+    display(
+        Markdown(
+            "|"
+            + "|".join(encabezados)
+            + "|\n"
+            + "".join(["|:-:" for _ in encabezados])
+            + "\n"
+            + "".join(["|" + "|".join(map(str, f)) + "|\n" for f in filas])
+        )
+    )
