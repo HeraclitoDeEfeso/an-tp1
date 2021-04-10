@@ -22,6 +22,15 @@
 \documentclass{article}
 ((* endblock docclass *))
 
+%===============================================================================
+% Paquetes
+%===============================================================================
+
+((* block packages *))
+((( super() )))
+\usepackage{listings} % `listings` es para insertar los codigo fuente
+((* endblock packages *))
+
 ((* block commands *))
 ((( super() )))
 \captionsetup{justification=centering,labelsep=period,font={small},%
@@ -37,6 +46,24 @@ labelfont=bf,textfont=it}
 % Para indentar primer parrafo
 \setcounter{secnumdepth}{0}
 % No se numeran las secciones pero si estan en el TOC 
+\makeatletter\let\@afterindentfalse\@afterindenttrue\makeatother
+% Cambiamos \@afterindentfalse por \@afterindenttrue para indentar primer parrafo
+\let\originalappendix\appendix
+\renewcommand{\appendix}{%
+\newpage\originalappendix\pagenumbering{gobble}%
+% Empezar apéndices en nueva pagina sin numeracion
+\renewcommand\thesection{Anexo \Alph{section}}
+% `thesection` es como se numeran los apendices
+\setcounter{secnumdepth}{1}
+% Contarlas secciones de apendice
+}%
+\lstdefinestyle{mystyle}{
+    keywordstyle=\bf,
+    numberstyle=\small,
+    basicstyle=\ttfamily\normalsize,
+    numbers=left
+}
+\lstset{style=mystyle}
 ((* endblock commands *))
 
 ((* block title *))
@@ -66,3 +93,29 @@ labelfont=bf,textfont=it}
     \teacher\vspace{1cm}\makeatother
 \end{titlepage}
 ((* endblock maketitle *))
+
+%===============================================================================
+% Input
+%===============================================================================
+
+% Esconder las celdas de codigo con la metadata hide_input=true
+
+((* block input scoped *))
+((*- if cell.metadata.hide_input: -*))
+((*- else -*))
+   ((( super() )))
+((*- endif *))
+((* endblock input *))
+
+
+((* block postdoc *))
+\appendix
+
+\section{}\label{ane:monitoreo}
+A continuación listamos en extenso el módulo de Python que
+contiene la función auxiliar {\ttfamily tabla()}.
+
+\lstinputlisting[language=Python]{auxiliares.py}
+
+   ((( super() )))
+((* endblock postdoc *))
