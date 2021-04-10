@@ -5,10 +5,10 @@
 
 | Archivo         | Descripción 
 |-                |-
-| logo.png 	      | Logo de UNTREF
+| logo.png 	  | Logo de UNTREF
 | make-nb.bat	  | Script de exportación pdf (WIN) 
 | make-nb.sh 	  | Script de exportación pdf (GNU) 
-| myarticle	      | Template Latex para exportar Jupyter Notebook
+| myarticle.tex.j2| Template Latex para exportar Jupyter Notebook
 | practica1.ipynb | Jupyter Notebook con resoluciones
 | Readme.md       | Este archivo
 
@@ -20,8 +20,6 @@ _TODO_
 - [X] Agregar script de exportación.
 - [X] Pasar fórmulas a latex.
 - [X] Pasar enunciados a notebook.
-- [ ] Ej.5: referencia demostración fórmula serie. 
-- [ ] Ej.5: demostración diferencia de órden. 
 
 Resolver
 
@@ -57,9 +55,9 @@ Resolver
     ](http://latex.codecogs.com/png.latex?\inline%20f(x)=g(x))   
     la computadora produce resultados distintos, cuál es más confiable?
 
-- [ ] 7. Escribir un algoritmo para estimar el número de máquina.
+- [X] 7. Escribir un algoritmo para estimar el número de máquina.
 
-- [ ] 8. Sean 
+- [X] 8. Sean 
 
     <span style="display:block;text-align:center">![
         x=[ 2.718281828, -3.141592654, 1.414213562, 0.5772156649, 0.3010299957]
@@ -82,7 +80,7 @@ Resolver
     
     Cuál resultado es más confiable y por qué?
 
-- [ ] 9. Considerar la sucesión 
+- [X] 9. Considerar la sucesión 
 
     <span style="display:block;text-align:center"> ![
           X_0 = 1,    
@@ -98,7 +96,7 @@ Resolver
     ](https://latex.codecogs.com/png.image?\inline%20x_n)
     de ambas formas y comparar. Cuál es más confiable? Por qué?
 
-- [ ] 10. Consideremos la siguiente modificación de la serie de Fibonacci : 
+- [X] 10. Consideremos la siguiente modificación de la serie de Fibonacci : 
 
     <span style="display:block;text-align:center"> ![
           R_0 = 1
@@ -113,7 +111,7 @@ Resolver
         R_n
     ](https://latex.codecogs.com/png.image?\inline%20r_n)? Comparar con el ejercicio anterior.
 
-- [ ] 11. Sea
+- [X] 11. Sea
 
     <span style="display:block;text-align:center"> ![
         Y_n = ∫_{0}^{1} x^n·e^x·dx
